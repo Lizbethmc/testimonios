@@ -1,23 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import {Testimonio} from './componentes/Testimonio.jsx'; // esta es una exportacion nombrada, que este en llaves, significa que solo ese componente de todo el archivo, porque podría tener más componentes
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='contenedor-principal'>
+        <h1>Esto es lo que dicen nuestras alumnas sobre Hackademy</h1>
+        <Testimonio />
+      </div>
     </div>
   );
 }
